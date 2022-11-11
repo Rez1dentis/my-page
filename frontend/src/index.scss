@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-size: 100%;
+    width: 100%;
+    height: 100vh;
+    color: rgb(20, 19, 19);
+    background: linear-gradient(-45deg, #e06f4d, #da2c6f, #0664f0, #13e06f);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+    }
+
+    .container {
+        width: 1000px;
+        min-height: 600px;
+        border: 10px solid rgba(239, 238, 234, 0);
+        margin: 0 auto;
+        margin-top: 100px;
+        background: rgba(239, 238, 234, 0.303);
+    }
+
+.header {
+    display: flex;
+    height: 130px;
+   }
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    width: 80%;
+    height: 100%;
+    background: #fbf7f729;
+    margin-right: 10px;
+}
+
+.pic {
+    display: flex;
+    height: 100%;
+    width: 20%;  
+}
+
+.nav {
+    ul {
+        display: flex;
+        background: rgba(36, 35, 35, 0.198);
+        margin: 10px 0;
+    }
+}
+
+.nav {
+    li {
+        list-style: none;
+        a {
+            display: flex;
+            padding: 20px;
+            text-decoration: none;
+            color: black;
+            font-weight: 400;
+            font-size: 20px;
+            border-right: 1px solid black;
+            transition: background .5s ease; 
+        }
+    }
+}
+
+.nav {
+    li {
+        a:hover {
+            background: rgba(26, 25, 25, 0.198);
+        }
+    }
+}
+
+.wrapper {
+    display: flex;
+}
+
+.content {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.content2 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+   margin: 30px;
+}
+
+.sidebar {
+    padding: 20px;
+    width: 25%;
+    text-align: right;
+    font-size: 20px;
+}
+
+
+.skills {
+    li {
+        padding: 5px;
+        transition: transform .4s ease;
+        cursor: pointer;
+    }
+}
+
+.skills {
+    li {
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+.skills {
+    li:hover {
+            transform: translateX(10px);
+       }
+}
+
+.content {
+    p {
+        img{
+            order: 2px solid #55c5e9; 
+            padding: 15px; 
+            margin-right: 10px; 
+            margin-bottom: 10px; 
+        }
+    }
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1400px) {
+    .wrapper {
+        width: 50%;
+
+    }
+    .title {
+    width: 50%;
+    }
+   
+}
+    
+
+
+
+@media (max-width: 767px) {
+    
+.content1 {
+   
+    flex-wrap: wrap;
+    margin: 8px;
+    width: 50%;
+}
+
+.content2 {
+    flex-wrap: wrap;
+   
+}
+
+.wrapper {
+        width: 50%;
+        
+    }
+
+    .title {
+    width: 50%;
+    }
+
+    .sidebar {
+        text-align: left;
+    }
+}
+
+
+
+@keyframes change {
+   
+    0% {
+        background-position: 0 50%;
+    }
+    
+    50% {
+        background-position: 100% 50%;
+    }
+    
+    100% {
+        background-position: 0 50%;
+    }
+}
